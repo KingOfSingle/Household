@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.co.ezenac.ss.household.InputActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.5dp"
+        >
+    <TextView
+        android:id="@+id/input_txt_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14.5dp"
+        android:textColor="#4b4242"
+        android:text="2017/11/15"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:inputType="date"
+        />
+
+    <Button
+        android:id="@+id/input_btn_close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_round_black_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14.3dp"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        >
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:background="@drawable/img_won"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="금액"
+            android:textSize="72dp"
+            android:textColor="#587bab"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:background="@null"
+            android:layout_marginRight="19.3dp"
+            android:inputType="number"
+            android:layout_marginLeft="90dp"
+            />
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31dp"
+        >
+
+        <Button
+            android:id="@+id/btn_income"
+            android:layout_width="150dp"
+            android:layout_height="67.5dp"
+            android:text="@string/income"
+            android:background="@drawable/rectangle_3"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/btn_expense"
+            android:layout_width="150dp"
+            android:layout_height="67.5dp"
+            android:text="@string/expense"
+            android:background="@drawable/rectangle_3_p"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20.3dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.co.ezenac.ss.household.InfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_info_back"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:background="@drawable/ic_back_gray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="#232323"
+            android:lineSpacingExtra="0dp"
+            android:layout_centerInParent="true"
+            android:text="@string/detail"
+
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#979797"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19.5dp"
+        >
+        <ImageView
+            android:id="@+id/info_color"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_oval_income"
+            />
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.5dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="27.5dp"
+            android:textColor="@color/income"
+            android:lineSpacingExtra="-14.5dp"
+            android:text="@string/income"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        >
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:background="@drawable/img_won"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/info_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10,000"
+            android:layout_alignParentRight="true"
+            android:textSize="72dp"
+            android:textColor="#587bab"
+            />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_info_delete"
+        android:layout_width="319.3dp"
+        android:layout_height="67.5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_rectangle"
+        android:text="@string/delete"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

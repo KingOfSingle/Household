@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="69.3dp"
+    android:orientation="vertical"
+    >
+        <ImageView
+            android:id="@+id/info_color"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/shape_oval_income"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/info_color"
+            android:orientation="vertical"
+            android:layout_marginLeft="12.2dp"
+
+            >
+            <TextView
+                android:id="@+id/info_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000"
+                />
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="36.3dp"
+            android:layout_height="36.3dp"
+            android:background="@drawable/ic_edit_delete_keycolor"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16.8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#979797"
+            android:layout_marginTop="72dp"
+            />
+
+</RelativeLayout>
